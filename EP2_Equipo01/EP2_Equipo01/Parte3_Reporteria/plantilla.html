@@ -1,0 +1,58 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Informe Gerencial - GreenEnergy Analytics</title>
+    <style>
+        body { font-family: Arial, sans-serif; margin: 40px; color: #333; line-height: 1.6; }
+        h1 { color: #1a5490; border-bottom: 3px solid #1a5490; padding-bottom: 10px; }
+        h2 { color: #2c7bb6; margin-top: 30px; border-bottom: 1px solid #ddd; padding-bottom: 5px; }
+        .kpi-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 15px; margin: 20px 0; }
+        .kpi-card { background: #f0f7ff; padding: 15px; border-left: 4px solid #2c7bb6; border-radius: 4px; }
+        .kpi-valor { font-size: 22px; font-weight: bold; color: #1a5490; }
+        .kpi-label { font-size: 12px; color: #666; text-transform: uppercase; }
+        .hallazgo { background: #f9f9f9; padding: 15px; border-left: 4px solid #ff9800; margin: 15px 0; }
+        .limitacion { background: #fff3cd; padding: 10px; border-left: 4px solid #ffc107; margin: 10px 0; }
+        img { max-width: 100%; border: 1px solid #eee; }
+        .pie { font-size: 11px; color: #999; margin-top: 40px; border-top: 1px solid #ddd; padding-top: 10px; text-align: center; }
+    </style>
+</head>
+<body>
+
+<h1>INFORME GERENCIAL DE COBERTURA ENERGÉTICA</h1>
+<p><strong>Periodo:</strong> {{ periodo }}</p>
+<p><strong>Fecha de generación:</strong> {{ fecha_generacion }}</p>
+
+<h2>1. Indicadores principales</h2>
+<div class="kpi-grid">
+    <div class="kpi-card">
+        <div class="kpi-label">Energía generada (kWh)</div>
+        <div class="kpi-valor">{{ "{:,.2f}".format(kpis.energia_total_kwh) }}</div>
+    </div>
+    <div class="kpi-card">
+        <div class="kpi-label">Demanda total (kWh)</div>
+        <div class="kpi-valor">{{ "{:,.2f}".format(kpis.demanda_total_kwh) }}</div>
+    </div>
+    <div class="kpi-card">
+        <div class="kpi-label">Deficit total (kWh)</div>
+        <div class="kpi-valor">{{ "{:,.2f}".format(kpis.deficit_total_kwh) }}</div>
+    </div>
+</div>
+
+<h2>2. Déficit por sede</h2>
+<img src="{{ ruta_grafico }}" alt="Déficit por sede">
+
+<h2>3. Hallazgo</h2>
+<div class="hallazgo">{{ hallazgo }}</div>
+
+<h2>4. Recomendación</h2>
+<p>{{ recomendacion }}</p>
+
+<h2>5. Limitación</h2>
+<div class="limitacion">{{ limitacion }}</div>
+
+<div class="pie">Informe generado automáticamente por generar_reporte.py</div>
+
+</body>
+</html>

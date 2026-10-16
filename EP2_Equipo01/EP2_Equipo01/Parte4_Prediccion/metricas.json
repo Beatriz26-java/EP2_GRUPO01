@@ -1,0 +1,7 @@
+{
+  "mae_baseline": 1194.573,
+  "mae_modelo": 298.765,
+  "rmse_modelo": 378.7246,
+  "r2_modelo": 0.7824,
+  "mejora_mae_pct": 74.99
+}

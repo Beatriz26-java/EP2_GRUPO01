@@ -1,0 +1,7 @@
+﻿carnet,nombre,aporte
+"38425,Gabriela Michelle García Peréz,""Parte 3 Reportería: generar_reporte.py, plantilla.html, informe.html/docx, grafico.png, reporte_kpis.csv, metadatos.json y justificaciones"""
+"31225,Cristina Raquel Alfaro Aguilar,""Parte 4 Predicción: entrenamiento de DummyRegressor y LinearRegression, exportación de predicciones.csv, cálculo de metricas.json y justificaciones"""
+"88525,Isela Alexandra Quintanilla Cruz,""Parte 1 Power BI: Diseñar las 4 tarjetas, el grafico de evolucion temporal, graficos comparativos por sedes y region, vista_bi.png y justificaciones"""
+"38125,Glenda Beatriz Cruz García,""Parte 2 ArcGIS: script Python de validación, geo_validado.csv, capas, pop-ups, dos vistas de mapa y justificaciones"""
+"39025,Luis Alonso Hernández Mundo,""Parte 1 Power BI: importar operaciones_sedes.csv,  crear dimensiones y tabla Fact, 4 medidas DAX, indicadores.csv y justificaciones"""
+"35825,Emerson Alexander Granadeño Valiente,""Parte 4 Predicción: carga y orden cronológico de demanda_diaria.csv, revisión de nulos, definición de y, construcción de X, eliminación de filas sin historial, división cronológica y justificaciones"""
